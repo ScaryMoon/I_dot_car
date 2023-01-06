@@ -84,6 +84,7 @@ mid = WebDriverWait(driver, 10)
 mid = mid.until(EC.visibility_of_element_located(
     (By.CLASS_NAME, "/html/body/form/table/tbody/tr[2]/td/table/tbody/tr/td/table[2]/tbody/tr[1]/td/table/tbody/tr[2]/td[1]/a"))).click()
                      
+#個別填表單 未測試
 sleep(0.5)
 mids1=driver.find_elements(By.XPATH,"//tr[@class='TRItemStyle']")
 mids2=driver.find_elements(By.XPATH,"//tr[@class='TRAlternatingItemStyle']")
